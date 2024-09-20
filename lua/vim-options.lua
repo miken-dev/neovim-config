@@ -1,14 +1,9 @@
 vim.g.mapleader = " "
 
-options = {
-	opt = {
-	-- set to true or false etc.
-		relativenumber = true, -- sets vim.opt.relativenumber
-		number = true, -- sets vim.opt.number
-		spell = false, -- sets vim.opt.spell
-		signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-		wrap = false, -- sets vim.opt.wrap
-		shiftwidth = 4,
-		tabstop = 4,
-	}
-}
+vim.opt.number = true
+vim.opt.relativenumber = true -- sets vim.opt.relativenumber
+vim.opt.spell = true
+vim.opt.signcolumn = "auto" -- sets vim.opt.signcolumn to auto
+vim.opt.wrap = false -- sets vim.opt.wrap
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
