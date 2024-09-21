@@ -1,7 +1,7 @@
 return {
 	{
 		'nvim-telescope/telescope.nvim', tag = '0.1.8',
-		dependencies = { 'nvim-lua/plenary.nvim' },
+		dependencies = { 'nvim-lua/plenary.nvim', "folke/todo-comments.nvim" },
 		config = function()
 			local telescope = require("telescope")
 			local builtin = require("telescope.builtin")
@@ -15,6 +15,7 @@ return {
 			vim.keymap.set('n', '<leader>fs', builtin.live_grep, { desc = "Find string in directory" })
 			vim.keymap.set('n', '<leader>fr', "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
 			vim.keymap.set('n', '<leader>fc', "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor" })
+			vim.keymap.set('n', '<leader>ft', "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 		end
 	},
 	{
