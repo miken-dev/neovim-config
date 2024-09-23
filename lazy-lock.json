@@ -29,12 +29,15 @@
   "nvim-dap": { "branch": "master", "commit": "90616ae6ae40053103dc66872886fc26b94c70c8" },
   "nvim-dap-go": { "branch": "main", "commit": "5511788255c92bdd845f8d9690f88e2e0f0ff9f2" },
   "nvim-dap-ui": { "branch": "master", "commit": "1c351e4e417d4691da12948b6ecf966936a56d28" },
+  "nvim-lsp-file-operations": { "branch": "master", "commit": "92a673de7ecaa157dd230d0128def10beb56d103" },
   "nvim-lspconfig": { "branch": "master", "commit": "f4fef355efa3c5d0813512480ee7b2c050b09fe4" },
   "nvim-nio": { "branch": "master", "commit": "a428f309119086dc78dd4b19306d2d67be884eee" },
+  "nvim-tree.lua": { "branch": "master", "commit": "8405ecfbd6bb08a94ffc9c68fef211eea56e8a3b" },
   "nvim-treesitter": { "branch": "master", "commit": "2b2635551c83f26f87bf122ad25fcaf90b9a6be0" },
   "nvim-treesitter-context": { "branch": "master", "commit": "3d5390c49e3f8fe457b376df2a49aa39d75b7911" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "375c2d86cee6674afd75b4f727ce3a80065552f7" },
   "nvim-web-devicons": { "branch": "master", "commit": "26220156aafb198b2de6a4cf80c1b120a3768da0" },
+  "oil.nvim": { "branch": "master", "commit": "1360be5fda9c67338331abfcd80de2afbb395bcd" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
@@ -44,5 +47,6 @@
   "vim-tmux-navigator": { "branch": "master", "commit": "a9b52e7d36114d40350099f254b5f299a35df978" },
   "vimux": { "branch": "master", "commit": "64df7ce47f16adaa5bc15d07f2d99197524961a9" },
   "which-key.nvim": { "branch": "main", "commit": "fb070344402cfc662299d9914f5546d840a22126" },
-  "window-picker": { "branch": "main", "commit": "41cfaa428577c53552200a404ae9b3a0b5719706" }
+  "window-picker": { "branch": "main", "commit": "41cfaa428577c53552200a404ae9b3a0b5719706" },
+  "xcodebuild.nvim": { "branch": "main", "commit": "f12ec77feda8d4bd9ee5a540410ad3626f2a2bc7" }
 }
