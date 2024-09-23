@@ -1,4 +1,4 @@
-
+vim.opt.mouse = "a"
 vim.opt.number = true
 vim.opt.relativenumber = true -- sets vim.opt.relativenumber
 vim.opt.spell = true
