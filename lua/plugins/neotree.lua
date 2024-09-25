@@ -18,7 +18,8 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>")
+		vim.keymap.set("n", "<leader>ee", ":Neotree filesystem reveal left<CR>")
+		vim.keymap.set("n", "<leader>et", ":Neotree filesystem toggle left<CR>")
 		buffers = {
 			follow_current_file = {
 				enabled = true,
