@@ -7,7 +7,7 @@ vim.opt.wrap = false -- sets vim.opt.wrap
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.autoindent = true
-
+vim.opt.wrap = true
 -- search settings
 
 vim.opt.ignorecase = true
@@ -25,4 +25,3 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 colorcolumn = 80
-
