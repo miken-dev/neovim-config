@@ -50,6 +50,7 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.cssls.setup({})
 			lspconfig["sourcekit"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
