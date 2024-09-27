@@ -54,5 +54,6 @@
   "vimux": { "branch": "master", "commit": "64df7ce47f16adaa5bc15d07f2d99197524961a9" },
   "which-key.nvim": { "branch": "main", "commit": "fb070344402cfc662299d9914f5546d840a22126" },
   "window-picker": { "branch": "main", "commit": "41cfaa428577c53552200a404ae9b3a0b5719706" },
-  "xcodebuild.nvim": { "branch": "main", "commit": "f12ec77feda8d4bd9ee5a540410ad3626f2a2bc7" }
+  "xcodebuild.nvim": { "branch": "main", "commit": "f12ec77feda8d4bd9ee5a540410ad3626f2a2bc7" },
+  "zellij-nav.nvim": { "branch": "main", "commit": "511e9b7bb7165ef817dbfb40169cea9b4d3c3d44" }
 }
