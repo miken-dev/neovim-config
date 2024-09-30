@@ -12,6 +12,7 @@ return {
 			})
 			vim.keymap.set('n', '<C-o>', builtin.find_files, {})
 			vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find files in directory" })
+			vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Find string in directory" })
 			vim.keymap.set('n', '<leader>fs', builtin.live_grep, { desc = "Find string in directory" })
 			vim.keymap.set('n', '<leader>fr', "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
 			vim.keymap.set('n', '<leader>fc', "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor" })
