@@ -51,10 +51,11 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.cssls.setup({})
-			lspconfig["sourcekit"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
+--			lspconfig["sourcekit"].setup({
+--				capabilities = capabilities,
+--				on_attach = on_attach,
+--			})
+			lspconfig.sourcekit.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
