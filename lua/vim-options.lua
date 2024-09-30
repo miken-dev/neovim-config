@@ -25,3 +25,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 colorcolumn = 80
+
+vim.cmd.highlight('DiagnosticUnderlineError guisp=#ff0000 gui=undercurl')
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, { signs = true, underline = true, virtual_text = { spacing = 5, }, update_in_insert = true, })
