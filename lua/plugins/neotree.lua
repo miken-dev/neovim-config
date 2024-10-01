@@ -13,11 +13,25 @@ return {
 		vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
 
 		require("neo-tree").setup({
-			        popup_border_style = "rounded",
-        enable_git_status = true,
-        enable_diagnostics = true,
+			popup_border_style = "rounded",
+			enable_git_status = true,
+			enable_diagnostics = true,
 			sort_case_insensitive = true,
-
+			git_status = {
+				symbols = {
+					-- Change type
+					added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
+					modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
+					deleted = "✖", -- this can only be used in the git_status source
+					renamed = "󰁕", -- this can only be used in the git_status source
+					-- Status type
+					untracked = "",
+					ignored = "",
+					unstaged = "󰄱",
+					staged = "",
+					conflict = "",
+				},
+			},
 
 			source_selector = {
 				winbar = true,
@@ -28,12 +42,11 @@ return {
 					["p"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
 				},
 			},
-					filesystem = {
-			hide_dotfiles = false,
+			filesystem = {
+				hide_dotfiles = false,
 				hide_gitignorded = false,
-				hide_hidden = false
-		}
-
+				hide_hidden = false,
+			},
 		})
 		vim.keymap.set("n", "<leader>ee", ":Neotree filesystem reveal left<CR>")
 		vim.keymap.set("n", "<leader>et", ":Neotree filesystem toggle left<CR>")
