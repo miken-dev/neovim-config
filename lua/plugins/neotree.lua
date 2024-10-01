@@ -32,7 +32,20 @@ return {
 					conflict = "",
 				},
 			},
-
+			          file_size = {
+            enabled = true,
+            required_width = 35, -- min width of window required to show this column
+			},
+			type = {
+				enabled = true,
+				required_width = 100,
+			},
+			last_modified = {
+				enabled = false,
+			},
+			created = {
+				enabled = false,
+			},
 			source_selector = {
 				winbar = true,
 				statusline = true,
