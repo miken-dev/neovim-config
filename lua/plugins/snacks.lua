@@ -52,7 +52,7 @@ return {
 		{ "<leader>gla", function() Snacks.lazygit() end,                 desc = "Lazygit" },
 		{ "<leader>glo", function() Snacks.lazygit.log() end,             desc = "Lazygit Log (cwd)" },
 		{ "<leader>nd", function() Snacks.notifier.hide() end,           desc = "Dismiss All Notifications" },
-		{ "<leader>ts",      function() Snacks.terminal() end,                desc = "Toggle Terminal" },
+		{ "<leader>tt",      function() Snacks.terminal.toggle() end,                desc = "Toggle Terminal" },
 		{ "<c-_>",      function() Snacks.terminal() end,                desc = "which_key_ignore" },
 		{ "]]",         function() Snacks.words.jump(vim.v.count1) end,  desc = "Next Reference",              mode = { "n", "t" } },
 		{ "[[",         function() Snacks.words.jump(-vim.v.count1) end, desc = "Prev Reference",              mode = { "n", "t" } },
