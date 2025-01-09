@@ -13,10 +13,11 @@ return {
 				{ section = "startup", padding = 3 },
 				{
 					section = "terminal",
-					cmd = "ascii-image-converter ~/.config/logo.png -C -c",
-					random = 30,
+					cmd = "ascii-image-converter ~/.config/logo-2.png -C -c",
+					random = 10,
+					pane = 2,
 					indent = 4,
-					height = 15
+					height = 25
 				}
 			},
 		},
