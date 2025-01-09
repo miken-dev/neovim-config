@@ -29,10 +29,10 @@ return {
 				opts.buffer = bufnr
 
 				opts.desc = "Show line diagnostics"
-				vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+				vim.keymap.set("n", "<leader>ci", vim.diagnostic.open_float, opts)
 
 				opts.desc = "Show documentation for what is under cursor"
-				vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+				vim.keymap.set("n", "<leader>co", vim.lsp.buf.hover, opts)
 			end
 
 			lspconfig.ts_ls.setup({
@@ -51,10 +51,10 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.cssls.setup({})
---			lspconfig["sourcekit"].setup({
---				capabilities = capabilities,
---				on_attach = on_attach,
---			})
+			--			lspconfig["sourcekit"].setup({
+			--				capabilities = capabilities,
+			--				on_attach = on_attach,
+			--			})
 			lspconfig.sourcekit.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
