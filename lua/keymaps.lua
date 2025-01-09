@@ -1,6 +1,11 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+-- snacks
+
+
+
+
 
 -- search
 keymap.set("n", "<leader>sc", ":nohl<CR>", { desc = "Clear search highlights" })
