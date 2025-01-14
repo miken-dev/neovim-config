@@ -1,8 +1,9 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
--- snacks
-
+-- liveserver
+keymap.set("n", "<leader>lon", ":LiveServerStart<cr>", { desc = "Live Server - On"})
+keymap.set("n", "<leader>lof", ":LiveServerStop<cr>", { desc = "Live Server - Off"})
 
 
 
