@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+
 local keymap = vim.keymap
 -- liveserver
 keymap.set("n", "<leader>lon", ":LiveServerStart<cr>", { desc = "Live Server - On"})
@@ -37,9 +38,14 @@ keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>")
 
 -- Telescope
 
+
 --ColorPicker
 vim.keymap.set("n", "<leader>cps", "<cmd>lua require('minty.shades').open()<cr>", {desc = "Color Picker Shades"})
 vim.keymap.set("n", "<leader>cph", "<cmd>lua require('minty.huefy').open()<cr>", {desc = "Color Picker Hues"})
 
 -- Theme Picker
 vim.keymap.set("n", "<leader>cpt", "<cmd>lua require('theme-picker').open_theme_picker()<cr>", { desc = "Pick color theme"})
+
+-- Git Diff view
+vim.keymap.set("n", "leader>gdo", "<cmd>DiffViewOpen<cr>", { desc = "Git Diff Open"})
+vim.keymap.set("n", "leader>gdc", "<cmd>DiffViewClose<cr>", { desc = "Git Diff Close"})
