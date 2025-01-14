@@ -10,6 +10,9 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.laststatus = 3
+-- turn off extra diagnostic for tiny-inline-diagnostics
+vim.diagnostic.config({ virtual_text = false }) 
 require("keymaps")
 require("vim-options")
 require("lazy").setup("plugins")
