@@ -27,7 +27,6 @@ return {
 			timeout = 3000,
 		},
 		quickfile = { enabled = true },
-		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
 		words = { enabled = true },
 		styles = {
@@ -46,6 +45,10 @@ return {
 		{ "<leader>cR", function() Snacks.rename.rename_file() end,      desc = "Rename File" },
 		{ "<leader>gB", function() Snacks.gitbrowse() end,               desc = "Git Browse",                  mode = { "n", "v" } },
 		{ "<leader>gb", function() Snacks.git.blame_line() end,          desc = "Git Blame Line" },
+		{ "<leader>lgl", function() Snacks.lazygit.log_file() end,        desc = "Lazygit Current File History" },
+		{ "<leader>lg", function() Snacks.lazygit() end,                 desc = "Lazygit" },
+		{ "<leader>lga", function() Snacks.lazygit() end,                 desc = "Lazygit" },
+		{ "<leader>lgo", function() Snacks.lazygit.log() end,             desc = "Lazygit Log (cwd)" },
 		{ "<leader>gh", function() Snacks.lazygit.log_file() end,        desc = "Lazygit Current File History" },
 		{ "<leader>gl", function() Snacks.lazygit() end,                 desc = "Lazygit" },
 		{ "<leader>gla", function() Snacks.lazygit() end,                 desc = "Lazygit" },
