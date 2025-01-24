@@ -47,5 +47,5 @@ vim.keymap.set("n", "<leader>cph", "<cmd>lua require('minty.huefy').open()<cr>",
 vim.keymap.set("n", "<leader>cpt", "<cmd>lua require('theme-picker').open_theme_picker()<cr>", { desc = "Pick color theme"})
 
 -- Git Diff view
-vim.keymap.set("n", "<leader>gdo", "<cmd>DiffViewOpen<cr>", { desc = "Git Diff Open"})
-vim.keymap.set("n", "<leader>gdc", "<cmd>DiffViewClose<cr>", { desc = "Git Diff Close"})
+vim.keymap.set("n", "leader>gdo", "<cmd>DiffViewOpen<cr>", { desc = "Git Diff Open"})
+vim.keymap.set("n", "leader>gdc", "<cmd>DiffViewClose<cr>", { desc = "Git Diff Close"})
