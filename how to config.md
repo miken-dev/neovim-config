@@ -21,3 +21,8 @@ brew install lazydocker
 brew install yazi
 brew install glow
 
+
+posting
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install --python 3.12 posting
+
